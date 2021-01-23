@@ -1,0 +1,72 @@
+/* CSS DOCUMENT */
+
+html {
+    background: rgb(144, 132, 79);
+}
+
+body {
+    background: rgb(255, 254, 248);
+    text-align: center;
+    padding: 3em;
+}
+
+h2 {
+    font-size: 1.75em;
+    font-weight: 300;
+    text-transform: lowercase;
+}
+
+h2, h3 {
+    font-family: sans-serif;
+    margin: 2em auto;
+}
+
+h4 {
+    font-family: serif;
+    font-size: 1.1em;
+    text-transform: lowercase;
+    margin-bottom: 0;
+}
+
+p {
+    font-family: sans-serif;
+    line-height: 1.3em;
+    
+    margin: 0.5em auto;
+    max-width: 640px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    font-family: sans-serif;
+    margin: 2em auto;
+}
+
+.price {
+    font-style: italic;
+    color: rgb(144, 132, 79);
+}
+
+.menuSection {
+    width: 25%;
+    min-width: 240px;
+    margin: 3em auto 1em auto;
+    padding-bottom: .5em;
+    border-bottom: 2pt solid rgb(22, 66, 117);
+    text-transform: uppercase;
+}
+
+.blueText {
+    color: rgb(246, 246, 243);
+    background-color: rgb(22, 66, 117);
+    padding: 0.2em;
+}
+
+.wordmark {
+    padding: 0 0 0.15em 0;
+    border-bottom: 2pt solid rgb(22, 66, 117);
+}
