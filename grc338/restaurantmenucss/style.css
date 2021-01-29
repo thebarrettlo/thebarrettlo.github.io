@@ -31,9 +31,8 @@ h4 {
 p {
     font-family: sans-serif;
     line-height: 1.3em;
-    
     margin: 0.5em auto;
-    max-width: 640px;
+    max-width: 40em;
 }
 
 ul {
@@ -53,7 +52,7 @@ li {
 
 .menuSection {
     width: 25%;
-    min-width: 240px;
+    min-width: 12em;
     margin: 3em auto 1em auto;
     padding-bottom: .5em;
     border-bottom: 2pt solid rgb(22, 66, 117);
