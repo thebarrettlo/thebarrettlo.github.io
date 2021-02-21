@@ -1,0 +1,226 @@
+/*CSS DOCUMENT*/
+
+body {
+    margin: 0;
+    padding: 1.5em;
+    background-color: #ffffff;
+    background-image: url("images/logo-pattern.png");
+    background-position: center;
+    background-repeat: space repeat;
+    background-size: 25%;
+}
+
+main {
+    color: #2e2e2e;
+}
+
+h1 {
+    font-family: 'CooperHewitt-Semibold', Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    margin-bottom: .5em;
+}
+
+h2 {
+    font-family: 'TypefesseClaire', Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    text-align: center;
+    margin: 2em auto .5em auto;
+}
+
+h3 {
+    font-family: 'CooperHewitt-Semibold', Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+h4 {
+    font-family: 'CooperHewitt-Light', Arial, Helvetica, sans-serif;
+}
+
+h5 {
+    font-family: 'CooperHewitt-Book', Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    margin: 0 auto .3em 0;
+}
+
+p {
+    font-family: 'CooperHewitt-Book', Arial, Helvetica, sans-serif;
+    line-height: 1.4em;
+}
+
+a {
+    font-family: 'CooperHewitt-Semibold', Arial, Helvetica, sans-serif;
+    color: #af0135;
+}
+
+a:visited {
+    color: #af0135; /* #692929; */
+}
+
+header {
+    margin: auto;
+    margin-bottom: 3em;
+    padding: .5em;
+    background: #ffffff;
+    filter: drop-shadow(0 .1em 5px #dfdfdf);
+    text-align: center;
+}
+
+header h4 {
+    margin: 0 auto 1em auto;
+}
+
+nav {
+    margin: auto 1em;
+    padding: 0.05em;
+    border-top: 1px solid #eeeeee;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+}
+
+ul.catalogItems {
+    list-style: none;
+    padding: 0 1em;
+}
+
+ul.catalogItems li {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto auto;
+    margin: auto;
+    padding-top: 2em;
+    margin-bottom: 2em;
+    border-top: 1px solid #af0135;
+}
+
+ul.catalogItems li h5 {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+ul.catalogItems li figure {
+    display: grid;
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+
+#objects {
+    background: #fffefa;
+    filter: drop-shadow(0 .1em 5px #dfdfdf);
+    margin-top: 2em;
+    padding: 1em 1.5em 1.5em 1.5em;
+}
+
+#textiles {
+    background: #fdfafa;
+    filter: drop-shadow(0 .1em 5px #dfdfdf);
+    margin-top: 2em;
+    padding: 1em 1.5em 1.5em 1.5em;
+}
+
+#messages {
+    background: #fdfffb;
+    filter: drop-shadow(0 .1em 5px #dfdfdf);
+    margin-top: 2em;
+    padding: 1em 1.5em 1.5em 1.5em;
+}
+
+.price {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    font-family: 'CooperHewitt-BookItalic', Arial, Helvetica, sans-serif;
+    margin: 0 0 auto auto
+}
+
+.itemDescription {
+    display: grid;
+    grid-column: 1/3;
+    grid-row: 2/3;
+    margin: .5em auto auto 0;
+}
+
+img {
+    width: 100%;
+    margin: 1em auto;
+}
+
+.featured {
+    margin: auto;
+    margin-bottom: 3em;
+}
+
+.featured a {
+    display: block;
+    margin: 1.5em auto;
+    text-align: center;
+}
+
+figure {
+    margin: auto;
+}
+
+figcaption {
+    font-family: 'CooperHewitt-Book', Arial, Helvetica, sans-serif;
+}
+
+footer {
+    background: #2e2e2e;
+    filter: drop-shadow(0 .1em 5px #dfdfdf);
+    margin: 4em auto auto auto;
+    padding: 1em;
+    text-align: center;
+}
+
+footer h3, footer a, footer a:visited, footer p {
+    color: #ffffff;
+}
+
+footer nav a {
+    font-family: 'CooperHewitt-Book', Arial, Helvetica, sans-serif;
+    font-size: .9em;
+}
+
+footer nav a img {
+    filter: invert(100%);
+    width: 50%;
+    height: auto;
+}
+
+footer p {
+    font-size: .8em;
+}
+
+/*** Font Faces ***/
+
+@font-face {
+    font-family: "CooperHewitt-Semibold"; /* Open-source: https://github.com/cooperhewitt/cooperhewitt-typeface */
+    src: url("fonts/CooperHewitt-Semibold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "CooperHewitt-Book"; /* Open-source: https://github.com/cooperhewitt/cooperhewitt-typeface */
+    src: url("fonts/CooperHewitt-Book.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "CooperHewitt-BookItalic"; /* Open-source: https://github.com/cooperhewitt/cooperhewitt-typeface */
+    src: url("fonts/CooperHewitt-BookItalic.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "CooperHewitt-Light"; /* Open-source: https://github.com/cooperhewitt/cooperhewitt-typeface */
+    src: url("fonts/CooperHewitt-Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "TypefesseClaire"; /* Open-source: https://www.velvetyne.fr/fonts/typefesse/ */
+    src: url("fonts/Typefesse_Claire-Obscure.woff2") format("woff2"),
+    url("fonts/Typefesse_Claire-Obscure.woff") format("woff");
+}
