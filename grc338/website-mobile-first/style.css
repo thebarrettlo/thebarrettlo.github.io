@@ -2,7 +2,7 @@
 
 body {
     margin: 0;
-    padding: 1.5em;
+    padding: 0;
     background-color: #ffffff;
     background-image: url("images/logo-pattern.png");
     background-position: center;
@@ -11,6 +11,7 @@ body {
 }
 
 main {
+    padding: 1.5em;
     color: #2e2e2e;
 }
 
@@ -24,7 +25,7 @@ h2 {
     font-family: 'TypefesseClaire', Arial, Helvetica, sans-serif;
     font-size: 2em;
     text-align: center;
-    margin: 2em auto .5em auto;
+    margin: .5em auto;
 }
 
 h3 {
@@ -50,20 +51,29 @@ p {
 
 a {
     font-family: 'CooperHewitt-Semibold', Arial, Helvetica, sans-serif;
-    color: #af0135;
+    color: #000000;
 }
 
 a:visited {
-    color: #af0135; /* #692929; */
+    color: #000000; /* #af0135; #692929; */
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 header {
     margin: auto;
-    margin-bottom: 3em;
-    padding: .5em;
+    padding: 0;
+    padding-top: 1em;
     background: #ffffff;
     filter: drop-shadow(0 .1em 5px #dfdfdf);
     text-align: center;
+}
+
+header img {
+    width: 50%;
+    height: auto;
 }
 
 header h4 {
@@ -78,14 +88,32 @@ nav {
 
 nav ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     list-style: none;
     padding: 0;
 }
 
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .9em;
+}
+
+.verticalLine {
+    border: 0.5px solid #2e2e2e;
+    width: 0;
+    height: 20vh;
+    margin: 1em auto;
+}
+
+.intro p {
+    text-align: center;
+    margin: 1em auto;
+}
+
 ul.catalogItems {
     list-style: none;
-    padding: 0 1em;
+    padding: 0;
 }
 
 ul.catalogItems li {
@@ -93,9 +121,8 @@ ul.catalogItems li {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto auto auto;
     margin: auto;
-    padding-top: 2em;
-    margin-bottom: 2em;
-    border-top: 1px solid #af0135;
+    margin-top: 2em;
+    padding-bottom: 2em;
 }
 
 ul.catalogItems li h5 {
@@ -110,25 +137,20 @@ ul.catalogItems li figure {
     grid-row: 3/4;
 }
 
-#objects {
-    background: #fffefa;
-    filter: drop-shadow(0 .1em 5px #dfdfdf);
-    margin-top: 2em;
-    padding: 1em 1.5em 1.5em 1.5em;
+.catalog section {
+    margin: 2em 1em auto 1em;
 }
 
-#textiles {
-    background: #fdfafa;
-    filter: drop-shadow(0 .1em 5px #dfdfdf);
-    margin-top: 2em;
-    padding: 1em 1.5em 1.5em 1.5em;
+.categoryTitle {
+    margin: auto;
+    padding-bottom: .5em;
+    border-bottom: 1px solid #2e2e2e;
 }
 
-#messages {
-    background: #fdfffb;
-    filter: drop-shadow(0 .1em 5px #dfdfdf);
-    margin-top: 2em;
-    padding: 1em 1.5em 1.5em 1.5em;
+.categorySubtitle {
+    font-family: 'CooperHewitt-BookItalic', Arial, Helvetica, sans-serif;
+    font-style: italic;
+    text-align: center;
 }
 
 .price {
@@ -170,10 +192,16 @@ figcaption {
     font-family: 'CooperHewitt-Book', Arial, Helvetica, sans-serif;
 }
 
+.quote {
+    font-family: 'CooperHewitt-BookItalic', Arial, Helvetica, sans-serif;
+    font-style: italic;
+    text-align: center;
+}
+
 footer {
     background: #2e2e2e;
     filter: drop-shadow(0 .1em 5px #dfdfdf);
-    margin: 4em auto auto auto;
+    margin: 2em auto auto auto;
     padding: 1em;
     text-align: center;
 }
