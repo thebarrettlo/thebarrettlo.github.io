@@ -1,0 +1,346 @@
+/*CSS DOCUMENT*/
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    background-image: url("images/logo-pattern.png");
+    background-position: center;
+    background-repeat: space repeat;
+    background-size: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.indexBody {
+    animation: fadeInAnimation ease-out 2.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+h1 {
+    font-family: 'CooperHewitt-Semibold', Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    margin-bottom: .5em;
+}
+
+h2 {
+    font-family: 'TypefesseClaire', Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    text-align: center;
+    margin: .5em auto;
+}
+
+h3 {
+    font-family: 'CooperHewitt-Semibold', Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+h4 {
+    font-family: 'CooperHewitt-Light', Arial, Helvetica, sans-serif;
+}
+
+h5 {
+    font-family: 'CooperHewitt-Book', Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    margin: 0 auto .3em 0;
+}
+
+p {
+    font-family: 'CooperHewitt-Book', Arial, Helvetica, sans-serif;
+    line-height: 1.4em;
+}
+
+a {
+    font-family: 'CooperHewitt-Semibold', Arial, Helvetica, sans-serif;
+    color: #000000;
+}
+
+a:visited {
+    color: #000000; /* #af0135; #692929; */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.skipToMain {
+    position: absolute;
+    left: 50%;
+    transform: translateY(-100%);
+    z-index: 100;
+    
+}
+
+.skipToMain:focus {
+    transform: translateY(0%);
+}
+
+header {
+    padding: 0;
+    padding-top: 1em;
+    background: #ffffff;
+    filter: drop-shadow(0 .1em 5px #dfdfdf);
+    text-align: center;
+}
+
+header h4 {
+    margin: 0 auto 1em auto;
+}
+
+.logo {
+    width: 50%;
+    height: auto;
+}
+
+nav {
+    margin: auto 1em;
+    padding: 0.05em;
+    border-top: 1px solid #eeeeee;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .9em;
+}
+
+main {
+    margin: auto;
+    padding: 1.5em;
+    color: #2e2e2e;
+}
+
+.verticalLine {
+    border: 0.5px solid #2e2e2e;
+    width: 0;
+    height: 20vh;
+    margin: 1em auto;
+}
+
+.intro p {
+    text-align: center;
+    margin: 1em auto;
+}
+
+ul.catalogItems {
+    list-style: none;
+    padding: 0;
+}
+
+ul.catalogItems li {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto auto;
+    margin: auto;
+    margin-top: 2em;
+    padding-bottom: 2em;
+}
+
+ul.catalogItems li h5 {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+ul.catalogItems li figure {
+    display: grid;
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+
+.catalog section {
+    margin: 2em 1em auto 1em;
+}
+
+.categoryTitle {
+    margin: auto;
+    padding-bottom: .5em;
+    border-bottom: 1px solid #2e2e2e;
+}
+
+.categorySubtitle {
+    font-family: 'CooperHewitt-BookItalic', Arial, Helvetica, sans-serif;
+    font-style: italic;
+    text-align: center;
+}
+
+.price {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    font-family: 'CooperHewitt-BookItalic', Arial, Helvetica, sans-serif;
+    margin: 0 0 auto auto
+}
+
+.itemDescription {
+    display: grid;
+    grid-column: 1/3;
+    grid-row: 2/3;
+    margin: .5em auto auto 0;
+}
+
+img {
+    width: 100%;
+    margin: 1em auto;
+}
+
+.featured {
+    margin: auto;
+    margin-bottom: 3em;
+}
+
+.featured a {
+    display: block;
+    margin: 1.5em auto;
+    text-align: center;
+}
+
+figure {
+    margin: auto;
+}
+
+figcaption {
+    font-family: 'CooperHewitt-Book', Arial, Helvetica, sans-serif;
+}
+
+.quote {
+    font-family: 'CooperHewitt-BookItalic', Arial, Helvetica, sans-serif;
+    font-style: italic;
+    text-align: center;
+}
+
+footer {
+    width: 100%;
+    background: #2e2e2e;
+    filter: drop-shadow(0 .1em 5px #dfdfdf);
+    margin: 2em auto 0 auto;
+    padding: 1em 0;
+    text-align: center;
+}
+
+footer h3, footer a, footer a:visited, footer p {
+    color: #ffffff;
+}
+
+footer nav a {
+    font-family: 'CooperHewitt-Book', Arial, Helvetica, sans-serif;
+    font-size: .9em;
+}
+
+footer nav a img {
+    filter: invert(100%);
+}
+
+footer p {
+    font-size: .8em;
+}
+
+@media screen and (min-width: 40em) {
+
+    body {
+        background-size: 20%;
+    }
+
+    .logo {
+        width: 25%;
+    }
+
+    main {
+        max-width: 30em;
+    }
+}
+
+@media screen and (min-width: 60em) {
+
+    body {
+        background-size: 10%;
+    }
+
+    .logo {
+        width: 15%;
+    }
+
+    nav {
+        max-width: 50em;
+        margin: auto;
+    }
+
+    main {
+        max-width: 50em;
+    }
+
+    img {
+        display: block;
+        max-width: 30em;
+        margin: auto;
+    }
+
+    .catalog {
+        width: 70%;
+        margin: auto;
+    }
+
+    .catalogItems {
+        margin-bottom: 5em;
+    }
+
+    ul.catalogItems li {
+        margin-top: 5em;
+        padding-bottom: 5em;
+    }
+
+
+}
+
+/*** Font Faces ***/
+
+@font-face {
+    font-family: "CooperHewitt-Semibold"; /* Open-source: https://github.com/cooperhewitt/cooperhewitt-typeface */
+    src: url("fonts/CooperHewitt-Semibold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "CooperHewitt-Book"; /* Open-source: https://github.com/cooperhewitt/cooperhewitt-typeface */
+    src: url("fonts/CooperHewitt-Book.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "CooperHewitt-BookItalic"; /* Open-source: https://github.com/cooperhewitt/cooperhewitt-typeface */
+    src: url("fonts/CooperHewitt-BookItalic.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "CooperHewitt-Light"; /* Open-source: https://github.com/cooperhewitt/cooperhewitt-typeface */
+    src: url("fonts/CooperHewitt-Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "TypefesseClaire"; /* Open-source: https://www.velvetyne.fr/fonts/typefesse/ */
+    src: url("fonts/Typefesse_Claire-Obscure.woff2") format("woff2"),
+    url("fonts/Typefesse_Claire-Obscure.woff") format("woff");
+}
